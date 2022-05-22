@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import {About, Contact, Experience, Header, Projects} from './container'
+import { useState } from 'react';
+
 
 function App() {
+  const [showExperience, setExperience] = useState(1)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <About/>
+      <div id='proj-exp-selector'>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+          <button class="btn btn-primary me-md-2" type="button">Work</button>
+          <button class="btn btn-primary" type="button">Projects</button>
+        </div>
+      </div>
+      <Experience/>
+      <Projects/>
+      <Contact/>
     </div>
   );
 }
