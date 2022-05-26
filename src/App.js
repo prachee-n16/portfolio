@@ -6,13 +6,12 @@ import {Routes, Route, BrowserRouter } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
-          <Route path='/' element={<Header/>} />
+          <Route path='/portfolio' element={<Header/>} />
           <Route path='/about' element={<About/>} />
           <Route path='/work' element={<Experience/>} />
           <Route path='/projects' element={<Projects/>} />
-          
         </Routes>
       </BrowserRouter>
     </div>

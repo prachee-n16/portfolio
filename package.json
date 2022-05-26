@@ -1,7 +1,7 @@
 {
   "name": "frontend_react",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://prachee-n16.github.io/portfolio/",
   "dependencies": {
     "@sanity/client": "^3.3.0",
