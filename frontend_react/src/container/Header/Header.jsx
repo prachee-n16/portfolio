@@ -1,33 +1,9 @@
-import React from 'react'
-
+import Navbar from "../../components/Navbar/Navbar"
 const Header = () => {
   return (
-    <div style={{background: 'linear-gradient(180deg, #09081F 40%, #F38338 109.28%)'}}>
+    <div className="vh-100" style={{background: 'linear-gradient(180deg, #09081F 40%, #F38338 109.28%)', overflowY: "hidden"}}>
       {/* Navbar with links to different parts of pages, single-page application */}
-      <nav class="navbar navbar-expand-lg navbar-dark">
-      <button class="navbar-toggler mx-4 mt-4" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        <div class="collapse navbar-collapse justify-content-center mt-4" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active mx-2">
-              <a class="nav-link" href="/">HOME</a>
-            </li>
-            <li class="nav-item active mx-2">
-              <a class="nav-link" href="/">ABOUT</a>
-            </li>
-            <li class="nav-item active mx-2">
-              <a class="nav-link" href="/">EXPERIENCE</a>
-            </li>
-            <li class="nav-item active mx-2">
-              <a class="nav-link" href="/">PROJECTS</a>
-            </li>
-            <li class="nav-item active mx-2">
-              <a class="nav-link" href="/">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <Navbar/>
 
       {/* Has title, subtitle + social app bar */}
       <div className='container mt-5 pt-5 d-flex justify-content-center align-items-center flex-column'>
