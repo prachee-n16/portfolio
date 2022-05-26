@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.31d6cfe0.css",
+    "main.js": "/portfolio/static/js/main.ede80f30.js",
+    "static/js/787.22e3b59d.chunk.js": "/portfolio/static/js/787.22e3b59d.chunk.js",
+    "static/media/VP-1.jpg": "/portfolio/static/media/VP-1.5d6a7f6f74fcfb37c3af.jpg",
+    "static/media/RYERSON-1.jpg": "/portfolio/static/media/RYERSON-1.272295464d1e3e80d475.jpg",
+    "static/media/DECA_1.jpg": "/portfolio/static/media/DECA_1.14905f23e0f8f6cbabe0.jpg",
+    "static/media/PROGRAMMING-1.jpg": "/portfolio/static/media/PROGRAMMING-1.5abf6fad43e42a4b606d.jpg",
+    "static/media/Prachee_Nanda_Resume.pdf": "/portfolio/static/media/Prachee_Nanda_Resume.8d72ff75a7c55088b250.pdf",
+    "static/media/ELLEHACKS_1.jpg": "/portfolio/static/media/ELLEHACKS_1.1f34fcf1a7f0be051e0c.jpg",
+    "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/portfolio/index.html",
+    "main.ede80f30.js.map": "/portfolio/static/js/main.ede80f30.js.map",
+    "787.22e3b59d.chunk.js.map": "/portfolio/static/js/787.22e3b59d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.ede80f30.js"
+  ]
+}
