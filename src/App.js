@@ -4,9 +4,10 @@ import {About, Resume, Experience, Header, Projects} from './container'
 import {Routes, Route, BrowserRouter } from "react-router-dom";
 
 function App() {
+
   return (
     <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <Routes>
           <Route path='/portfolio' element={<Header/>} />
           <Route path='/about' element={<About/>} />
