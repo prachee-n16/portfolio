@@ -1,16 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import resume from '../../assets/Prachee_Nanda_Resume.pdf'
+import './Navbar.css'
+
 const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <button class="navbar-toggler mx-4" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler mx-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active mx-2">
-                <Link to="/">
+                <Link to="/portfolio">
                     <a class="nav-link" href="/">HOME</a>
                 </Link>
             </li>
