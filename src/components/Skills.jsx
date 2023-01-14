@@ -10,7 +10,7 @@ const Skills = () => {
     { title: 'Hardware', skill: ['STM32 Nucleo', 'Breadboarding', 'Circuit Analysis'] },
   ]
   return (
-    <Box display="flex" sx={{ flexDirection: "row", }}>
+    <Box id="Skills" display="flex" sx={{ flexDirection: "row", }}>
       <Typography fontWeight={700} sx={{ width: '400px', mt: 5, ml: 10 }} variant="h3" fontSize={18} >
         Skills
       </Typography>

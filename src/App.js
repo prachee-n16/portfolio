@@ -12,6 +12,7 @@ import Header from './sections/Header'
 import Footer from './sections/Footer'
 
 import { ThemeProvider, CssBaseline, Divider } from '@mui/material'
+import { Box } from '@mui/system'
 
 /**
  * TODO
@@ -28,14 +29,17 @@ function App() {
         <CssBaseline />
         <div className="Portfolio">
           <Navbar />
+          <Box id="About"   />
           <Hero />
           <Header />
           <About />
           <Divider textAlign='center' variant="middle" sx={{mx: 10, mt: 6}}/>
           <Skills />
+          <Box id="Projects"   />
           <Divider textAlign='center' variant="middle" sx={{mx: 10, mt: 6}}/>
           <Projects />
           <Divider textAlign='center' variant="middle" sx={{mx: 10, mt: 6}}/>
+          <Box id="Experience"   />
           <Experience />
           <Footer />
         </div>

@@ -6,7 +6,7 @@ const Navbar = () => {
   const pages = ['About', 'Experience', 'Projects', 'Resume']
   return (
     <nav>
-      <AppBar position={"static"}>
+      <AppBar position={"fixed"}>
         <Toolbar>
           <Link 
             color="#000000" 
