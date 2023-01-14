@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.0f711f95.js",
+    "main.js": "/portfolio/static/js/main.c673bbb7.js",
     "static/media/courseGuru.png": "/portfolio/static/media/courseGuru.6db6c3ed32e465e436d4.png",
     "static/media/profile.jpeg": "/portfolio/static/media/profile.944f0833c09219fce97e.jpeg",
     "static/media/coved.jpeg": "/portfolio/static/media/coved.d74d0af02ad39c589b9e.jpeg",
     "static/media/whispr.png": "/portfolio/static/media/whispr.a2f7cbf417a733c9128e.png",
     "index.html": "/portfolio/index.html",
-    "main.0f711f95.js.map": "/portfolio/static/js/main.0f711f95.js.map"
+    "main.c673bbb7.js.map": "/portfolio/static/js/main.c673bbb7.js.map"
   },
   "entrypoints": [
-    "static/js/main.0f711f95.js"
+    "static/js/main.c673bbb7.js"
   ]
 }
