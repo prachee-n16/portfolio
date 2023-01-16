@@ -40,12 +40,12 @@ function App() {
             ? {
               primary: {
                 main: '#454545'
-              }
+              },
             }
             : {
               primary: {
                 main: '#ffffff'
-              }
+              },
             }
           )
         },

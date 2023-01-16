@@ -1,10 +1,11 @@
 import React from 'react'
 import profile from '../assets/profile.jpeg'
 
-import { Box, Avatar } from '@mui/material'
+import { Box, Avatar, useTheme } from '@mui/material'
 
 
 const Hero = () => {
+  const theme = useTheme();
   return (
     <section>
       <Box sx={{
@@ -24,7 +25,8 @@ const Hero = () => {
             bottom: '0',
             left: '20px',
             transform: 'translate(50%, 80%)',
-            border: '5px solid white',
+            border: '5px solid',
+            borderColor: theme.palette.mode === 'light' ? 'white' : 'black'
           }}
         />
       </Box>
