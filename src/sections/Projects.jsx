@@ -7,12 +7,69 @@ import ComputerIcon from '@mui/icons-material/Computer';
 import FlareIcon from '@mui/icons-material/Flare';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import DataObjectIcon from '@mui/icons-material/DataObject';
+import AppsIcon from '@mui/icons-material/Apps';
 
 import coved from '../assets/coved.jpeg'
 import whispr from '../assets/whispr.png'
 import courseGuru from '../assets/courseGuru.png'
+import simplAi from '../assets/simplai.jpeg'
+import portfolio from '../assets/portfolio.png'
+import alimental from '../assets/alimental.png'
 
 const Projects = () => {
+  const all = [
+    {
+      title: 'COV-ED: Parenting made simple!',
+      description: 'Prototype mobile game using Unity to entertain children during their free time',
+      img: coved,
+      githubLink: 'https://github.com/Shivam-J-07/COV-ED',
+      devPostLink: 'https://devpost.com/software/cov-ed-f0hid8',
+      youtubeLink: '',
+      projectType: ['Hackathon', 'Winner']
+    },
+    {
+      title: 'Whispr',
+      description: 'Provides in-app translation features that enables for real-time multilingual communication',
+      img: whispr,
+      githubLink: 'https://github.com/prachee-n16/whispr-chatApp',
+      devPostLink: '',
+      youtubeLink: '',
+      projectType: ['Personal']
+    },
+    {
+      title: 'simpl.ai',
+      description: 'A website app that recognizes difficult text and rephrase them with simpler language',
+      img: simplAi,
+      devPostLink: 'https://devpost.com/software/simpl-ai',
+      githubLink: 'https://github.com/UnderTheTableHTV7/simplai_HTV7',
+      projectType: ['Hackathon', 'Winner']
+    },
+    {
+      title: 'Portfolio',
+      description: 'Designed and developed a personal portfolio using ReactJS and MaterialUI to showcase my previous works',
+      img: portfolio,
+      githubLink: 'https://github.com/prachee-n16/portfolio',
+      devPostLink: 'https://prachee-n16.github.io/portfolio/',
+      youtubeLink: '',
+      projectType: ['Personal']
+    },
+    {
+      title: 'Alimental Run',
+      description: 'Based on popular game Snake, with a foody twist',
+      img: alimental,
+      githubLink: 'https://github.com/prachee-n16/Alimental-Run',
+      projectType: ['Personal']
+    },
+    {
+      title: 'CourseGuru',
+      description: 'CourseGuru is a website that compares courses offered by various educational platforms!',
+      img: courseGuru,
+      devPostLink: 'https://devpost.com/software/codeguru-2jy96q',
+      youtubeLink: 'https://www.youtube.com/watch?v=WFTQj3xF0T4&t=1s',
+      projectType: ['Hackathon', 'Winner']
+    },
+  ]
+
   const featured = [
     {
       title: 'COV-ED: Parenting made simple!',
@@ -33,11 +90,11 @@ const Projects = () => {
       projectType: ['Personal']
     },
     {
-      title: 'CourseGuru',
-      description: 'CourseGuru is a website that compares courses offered by various educational platforms!',
-      img: courseGuru,
-      devPostLink: 'https://devpost.com/software/codeguru-2jy96q',
-      youtubeLink: 'https://www.youtube.com/watch?v=WFTQj3xF0T4&t=1s',
+      title: 'simpl.ai',
+      description: 'A website app that recognizes difficult text and rephrase them with simpler language',
+      img: simplAi,
+      devPostLink: 'https://devpost.com/software/simpl-ai',
+      githubLink: 'https://github.com/UnderTheTableHTV7/simplai_HTV7',
       projectType: ['Hackathon', 'Winner']
     },
   ]
@@ -60,23 +117,52 @@ const Projects = () => {
       youtubeLink: 'https://www.youtube.com/watch?v=WFTQj3xF0T4&t=1s',
       projectType: ['Hackathon', 'Winner']
     },
+    {
+      title: 'simpl.ai',
+      description: 'A website app that recognizes difficult text and rephrase them with simpler language',
+      img: simplAi,
+      devPostLink: 'https://devpost.com/software/simpl-ai',
+      githubLink: 'https://github.com/UnderTheTableHTV7/simplai_HTV7',
+      projectType: ['Hackathon', 'Winner']
+    },
   ]
 
-  const personal = [{
-    title: 'Whispr',
-    description: 'Provides in-app translation features that enables for real-time multilingual communication',
-    img: whispr,
-    githubLink: 'https://github.com/prachee-n16/whispr-chatApp',
-    devPostLink: '',
-    youtubeLink: '',
-    projectType: ['Personal']
-  }]
+  const personal = [
+    {
+      title: 'Whispr',
+      description: 'Provides in-app translation features that enables for real-time multilingual communication',
+      img: whispr,
+      githubLink: 'https://github.com/prachee-n16/whispr-chatApp',
+      devPostLink: 'https://whispr.vercel.app/app',
+      youtubeLink: '',
+      projectType: ['Personal']
+    },
+    {
+      title: 'Portfolio',
+      description: 'Designed and developed a personal portfolio using ReactJS and MaterialUI to showcase my previous works',
+      img: portfolio,
+      githubLink: 'https://github.com/prachee-n16/portfolio',
+      devPostLink: 'https://prachee-n16.github.io/portfolio/',
+      youtubeLink: '',
+      projectType: ['Personal']
+    },
+    {
+      title: 'Alimental Run',
+      description: 'Based on popular game Snake, with a foody twist',
+      img: alimental,
+      githubLink: 'https://github.com/prachee-n16/Alimental-Run',
+      projectType: ['Personal']
+    },
+  ]
   const [projects, setProjects] = useState(featured)
+  const [name, setName] = useState('featured')
 
   const handleProjectDisplay = (event, newProjectType) => {
     if (newProjectType === 'featured') setProjects(featured)
     if (newProjectType === 'hackathon') setProjects(hackathon)
     if (newProjectType === 'personal') setProjects(personal)
+    if (newProjectType === 'all') setProjects(all)
+    setName(newProjectType);
   }
 
   return (
@@ -87,33 +173,41 @@ const Projects = () => {
         </Typography>
 
         <ToggleButtonGroup
-          value={projects}
+          value={name}
+          color='secondary'
           exclusive
           onChange={handleProjectDisplay}
           sx={{ ml: 10, mt: 5, mr: 10 }}
+          aria-label="select project"
         >
-          <ToggleButton value="featured" aria-label="left aligned">
+          <ToggleButton value="featured" aria-label="featured">
             <FlareIcon />
             <Typography sx={{ fontWeight: 600, ml: 1 }}>
               Featured
             </Typography>
           </ToggleButton>
-          <ToggleButton value="hackathon" aria-label="left aligned">
+          <ToggleButton value="hackathon" aria-label="hackathon">
             <ConstructionIcon />
             <Typography sx={{ fontWeight: 600, ml: 1 }}>
               Hackathon
             </Typography>
           </ToggleButton>
-          <ToggleButton value="personal" aria-label="left aligned">
+          <ToggleButton value="personal" aria-label="personal">
             <DataObjectIcon />
             <Typography sx={{ fontWeight: 600, ml: 1 }}>
               Personal
             </Typography>
           </ToggleButton>
+          <ToggleButton value="all" aria-label="all">
+            <AppsIcon />
+            <Typography sx={{ fontWeight: 600, ml: 1 }}>
+              All
+            </Typography>
+          </ToggleButton>
         </ToggleButtonGroup>
       </Box>
       <Box display="flex" sx={{ flexDirection: 'row', ml: 10, mt: 4, mb: 10 }}>
-        <Grid container sx={{mr: 5}}>
+        <Grid container spacing={3} sx={{ mr: 5 }}>
           {projects.map((project) =>
             <Grid item xs={4}>
               <Card display="flex" sx={{ p: 1, height: '440px', width: '400px' }}>

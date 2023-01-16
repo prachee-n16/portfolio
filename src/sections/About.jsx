@@ -26,7 +26,7 @@ const About = () => {
             When I'm not coding or pushing pixels, you can find me obsessing over two-dimensional characters, sketching, gaming, or photography.
             <br /> <br />
           </Typography>
-          <Link onClick={() => setReadMore(!readMore)} underline="none" sx={{ color: '#8455c6', fontWeight: 600, m: 0, p: 0, mt: 4 }}>
+          <Link onClick={() => setReadMore(!readMore)} underline="none" color="secondary" sx={{ fontWeight: 600, m: 0, p: 0, mt: 4 }}>
             {readMore ? 'Read more' : 'Show Less'}
           </Link>
 
