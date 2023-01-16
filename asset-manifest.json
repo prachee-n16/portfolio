@@ -1,14 +1,19 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.c673bbb7.js",
+    "main.js": "/portfolio/static/js/main.db3216c5.js",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.e36f4963690e5235a680.png",
+    "static/media/alimental.png": "/portfolio/static/media/alimental.bcea99b9fb37c242486c.png",
     "static/media/courseGuru.png": "/portfolio/static/media/courseGuru.6db6c3ed32e465e436d4.png",
+    "static/media/Resume.pdf": "/portfolio/static/media/Resume.14db47c6772465b7f2cb.pdf",
     "static/media/profile.jpeg": "/portfolio/static/media/profile.944f0833c09219fce97e.jpeg",
+    "static/media/maple.png": "/portfolio/static/media/maple.6666e7f40acfdb37fc2b.png",
     "static/media/coved.jpeg": "/portfolio/static/media/coved.d74d0af02ad39c589b9e.jpeg",
     "static/media/whispr.png": "/portfolio/static/media/whispr.a2f7cbf417a733c9128e.png",
+    "static/media/simplai.jpeg": "/portfolio/static/media/simplai.0520ac5439d15303ae71.jpeg",
     "index.html": "/portfolio/index.html",
-    "main.c673bbb7.js.map": "/portfolio/static/js/main.c673bbb7.js.map"
+    "main.db3216c5.js.map": "/portfolio/static/js/main.db3216c5.js.map"
   },
   "entrypoints": [
-    "static/js/main.c673bbb7.js"
+    "static/js/main.db3216c5.js"
   ]
 }
